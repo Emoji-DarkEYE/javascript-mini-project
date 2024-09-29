@@ -1,0 +1,28 @@
+body {
+    background-color: #121212; /* پس‌زمینه تاریک */
+    color: white; /* رنگ متن سفید */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2rem;
+}
+
+.countdown div {
+    text-align: center;
+}
+
+.countdown small {
+    display: block;
+    font-size: 0.75rem;
+}
+
+.hidden {
+    display: none;
+}

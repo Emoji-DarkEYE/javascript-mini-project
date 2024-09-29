@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Countdown Timer</title>
+    <!-- لینک بوت استرپ -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- لینک استایل سفارشی -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- فرم ورودی برای دریافت نام رویداد و زمان وقوع -->
+        <div id="event-form">
+            <h1 class="text-center">Countdown Timer</h1>
+            <form>
+                <div class="form-group">
+                    <label for="event-name">Event Name</label>
+                    <input type="text" class="form-control" id="event-name" placeholder="Enter event name">
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Event Date & Time</label>
+                    <input type="datetime-local" class="form-control" id="event-date">
+                </div>
+                <button type="button" class="btn btn-primary btn-block" id="start-timer">Start Timer</button>
+            </form>
+        </div>
+        
+<!-- نمایش تایمر شمارش معکوس -->
+<div id="countdown-timer" class="countdown hidden">
+    <h2 id="event-title"></h2> <!-- عنوان رویداد -->
+    <div>
+        <span id="days">00</span>
+        <small>D</small>
+    </div>
+    <div>
+        <span id="hours">00</span>
+        <small>H</small>
+    </div>
+    <div>
+        <span id="minutes">00</span>
+        <small>M</small>
+    </div>
+    <div>
+        <span id="seconds">00</span>
+        <small>S</small>
+    </div>
+</div>
+
+
+    <!-- لینک جاوا اسکریپت -->
+    <script src="script.js"></script>
+</body>
+</html>
